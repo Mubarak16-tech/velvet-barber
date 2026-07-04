@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment | The Velvet Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="The Velvet Barber home">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">The Velvet Barber</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html" class="active">Book Appointment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Booking page hero -->
+      <section class="page-hero">
+        <div class="container page-hero-grid reveal">
+          <div class="page-hero-content">
+            <p class="eyebrow">Book Appointment</p>
+            <h1>Reserve your visit in just a few steps.</h1>
+            <p>Choose your preferred barber, service, and time for a premium experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="booking-layout reveal">
+          <form class="booking-form glass-card" id="bookingForm" novalidate>
+            <label>
+              Full Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Preferred Barber
+              <select name="barber" required>
+                <option value="">Select</option>
+                <option>Marcus Cole</option>
+                <option>Jordan Hale</option>
+                <option>Devon Price</option>
+              </select>
+            </label>
+            <label>
+              Service
+              <select name="service" required>
+                <option value="">Select</option>
+                <option>Classic Cut</option>
+                <option>Skin Fade</option>
+                <option>Beard Trim</option>
+                <option>Hot Towel Shave</option>
+              </select>
+            </label>
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Time
+              <input type="time" name="time" required />
+            </label>
+            <label>
+              Additional Notes
+              <textarea name="notes" rows="4"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+          <div class="glass-card booking-info">
+            <h2>What to Expect</h2>
+            <p>We’ll confirm your appointment promptly and personalize your visit.</p>
+            <ul>
+              <li>Flexible scheduling</li>
+              <li>Luxury consultation</li>
+              <li>Premium products included</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">The Velvet Barber</span>
+          </a>
+          <p>Book with confidence and arrive ready to look your best.</p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>

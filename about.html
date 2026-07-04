@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | The Velvet Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="The Velvet Barber home">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">The Velvet Barber</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About page hero -->
+      <section class="page-hero">
+        <img class="page-hero-bg" src="images/about hero.jpg" alt="About us barber shop" />
+        <div class="container page-hero-grid reveal">
+          <div class="page-hero-content">
+            <p class="eyebrow">Our Story</p>
+            <h1>Where classic craftsmanship meets modern style.</h1>
+            <p>We believe grooming should feel personal, polished, and deeply satisfying.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="split-layout reveal">
+          <div>
+            <p class="eyebrow">The Beginning</p>
+            <h2>Built on craft, curated for modern men.</h2>
+            <p>Founded with a passion for sharp cuts and elevated service, The Velvet Barber was created to bring luxury grooming to the everyday client.</p>
+          </div>
+          <img class="image-placeholder large" src="images/barber1.jpg" alt="Luxury barber shop workspace" />
+        </div>
+      </section>
+
+      <section class="section container card-grid">
+        <article class="glass-card reveal">
+          <h3>Mission</h3>
+          <p>To deliver refined grooming with unmatched detail, comfort, and confidence.</p>
+        </article>
+        <article class="glass-card reveal">
+          <h3>Vision</h3>
+          <p>To set a new standard for premium barbering through timeless style and welcoming service.</p>
+        </article>
+      </section>
+
+      <section class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Meet the Team</p>
+          <h2>Crafted by experienced hands.</h2>
+        </div>
+        <div class="card-grid team-grid">
+          <article class="glass-card reveal">
+            <img class="team-image" src="images/barber1.jpg" alt="Marcus Cole, founder and lead barber" />
+            <h3>Marcus Cole</h3>
+            <p>Founder & Lead Barber</p>
+          </article>
+          <article class="glass-card reveal">
+            <img class="team-image" src="images/barber2.jpg" alt="Jordan Hale, precision specialist" />
+            <h3>Jordan Hale</h3>
+            <p>Precision Specialist</p>
+          </article>
+          <article class="glass-card reveal">
+            <img class="team-image" src="images/barber3.jpg" alt="Devon Price, shave artist" />
+            <h3>Devon Price</h3>
+            <p>Hot Towel Specialist</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <strong data-count="12">0</strong>
+            <span>Years in Business</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong data-count="5000">0</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong data-count="98">0</strong>
+            <span>Client Satisfaction</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong data-count="24">0</strong>
+            <span>Seven-Day Availability</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>From a small studio to a signature destination.</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <h3>2013</h3>
+            <p>Opened our first studio with a focus on bespoke grooming.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2018</h3>
+            <p>Expanded our services with luxury shaves and premium detailing.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2024</h3>
+            <p>Launched our refined signature experience with modern appointments.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">The Velvet Barber</span>
+          </a>
+          <p>Crafted for clients who appreciate timeless style and modern comfort.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>+1 (555) 012-3456</p>
+          <p>hello@thevelvetbarber.com</p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>

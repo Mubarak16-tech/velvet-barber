@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Velvet Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="The Velvet Barber home">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">The Velvet Barber</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact page hero -->
+      <section class="page-hero">        <img class="page-hero-bg" src="images/contact hero.jpg" alt="Contact us barber shop" />        <div class="container page-hero-grid reveal">
+          <div class="page-hero-content">
+            <p class="eyebrow">Contact</p>
+            <h1>We’re here to welcome you in.</h1>
+            <p>Reach out with questions, booking requests, or general inquiries.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container contact-layout">
+        <div class="glass-card reveal">
+          <h2>Visit Us</h2>
+          <p>123 Luxury Avenue, Downtown</p>
+          <p>+1 (555) 012-3456</p>
+          <p>hello@thevelvetbarber.com</p>
+          <img class="map-placeholder" src="images/barber1.jpg" alt="Map location of the barber shop" />
+        </div>
+        <div class="glass-card reveal">
+          <h2>Send a Message</h2>
+          <form class="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" required />
+            </label>
+            <label>
+              Email
+              <input type="email" required />
+            </label>
+            <label>
+              Message
+              <textarea rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item glass-card">
+            <summary>Do I need an appointment?</summary>
+            <p>Appointments are recommended, especially for premium services and weekend visits.</p>
+          </details>
+          <details class="faq-item glass-card">
+            <summary>What services do you offer?</summary>
+            <p>We provide haircuts, fades, shaves, beard care, and styling services.</p>
+          </details>
+          <details class="faq-item glass-card">
+            <summary>Can I book for a group?</summary>
+            <p>Yes, we offer group appointments and special bookings for events or celebrations.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">The Velvet Barber</span>
+          </a>
+          <p>Contact us for appointments, questions, and luxury grooming support.</p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>

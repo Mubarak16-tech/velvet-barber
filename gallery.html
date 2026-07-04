@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | The Velvet Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="The Velvet Barber home">
+          <span class="logo-mark">TV</span>
+          <span class="logo-text">The Velvet Barber</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="booking.html">Book Appointment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Gallery page hero -->
+      <section class="page-hero">
+        <div class="container page-hero-grid reveal">
+          <div class="page-hero-content">
+            <p class="eyebrow">Gallery</p>
+            <h1>A look inside our studio and signature finishes.</h1>
+            <p>Browse our latest transformations and the atmosphere behind the craft.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="filter-bar reveal" role="toolbar" aria-label="Gallery filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cuts">Cuts</button>
+          <button class="filter-btn" data-filter="shaves">Shaves</button>
+          <button class="filter-btn" data-filter="style">Style</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-item reveal" data-category="cuts">
+            <img class="gallery-image" src="images/pression cut.jpg" alt="Precision cut gallery image" />
+            <h3>Precision Cut</h3>
+          </article>
+          <article class="gallery-item reveal" data-category="shaves">
+            <img class="gallery-image" src="images/luxury shave.jpg" alt="Luxury shave gallery image" />
+            <h3>Luxury Shave</h3>
+          </article>
+          <article class="gallery-item reveal" data-category="style">
+            <img class="gallery-image" src="images/editorial style.jpg" alt="Editorial style gallery image" />
+            <h3>Editorial Style</h3>
+          </article>
+          <article class="gallery-item reveal" data-category="cuts">
+            <img class="gallery-image" src="images/modern fade.jpg" alt="Modern fade gallery image" />
+            <h3>Modern Fade</h3>
+          </article>
+          <article class="gallery-item reveal" data-category="shaves">
+            <img class="gallery-image" src="images/classic shave.jpg" alt="Classic shave gallery image" />
+            <h3>Classic Shave</h3>
+          </article>
+          <article class="gallery-item reveal" data-category="style">
+            <img class="gallery-image" src="images/signature style.jpg" alt="Signature finish gallery image" />
+            <h3>Signature Finish</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image preview" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close preview">×</button>
+      <div class="lightbox-content">
+        <img class="lightbox-image" src="" alt="Gallery preview" />
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">TV</span>
+            <span class="logo-text">The Velvet Barber</span>
+          </a>
+          <p>See the quality for yourself in every detail.</p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>
